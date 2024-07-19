@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    display: Flex;
+    flex-wrap: wrap;
+}
+
+.hero .left {
+    background-color: #253342;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: aut;
+}
+
+.hero .left h1 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.hero .left p {
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.hero .left img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.hero .left .icon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero .left .icon i {
+    background: white;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero .left .btn {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.hero .left .btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid darkgrey;
+    padding: 10px 30px;
+    border-radius: 35px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.hero .left .btn a:hover {
+    box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+}
+
+
+
+.hero .right {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.hero .right .txt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.hero .right .txt p {
+    font-family: "Poppins", sans-serif;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left {
+        width: 100%;
+        max-width: none;
+        position: static;
+    }
+
+    .hero .right {
+        margin-left: 0;
+    }
+
+    .copy {
+        margin-left: 0;
+    }
+}
+
+.txt h3 {
+    color: #253342;
+}
+
+.inline-h6 {
+    font-size: 1em;
+    font-weight: normal;
+    display: inline;
+}

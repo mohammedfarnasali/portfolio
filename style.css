@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    display: f,lex;
+    flex-wrap: wrap;
+}
+
+.hero .left {
+    background-color: #253342;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: aut;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero .left h1 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.hero .left p {
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.hero .left img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.hero .left .icon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero .left .icon i {
+    background: white;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero .left .btn {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.hero .left .btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid darkgrey;
+    padding: 10px 30px;
+    border-radius: 35px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.hero .left .btn a:hover {
+    box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+}
+
+
+.hero .right {
+    flex: 2 1 600px;
+    background: #fff;
+}
+
+.hero .right .text-box {
+    max-width: 800px;
+    margin: auto;
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero .right .text-box h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2b6777;
+}
+
+.hero .right .text-box hr {
+    border: 1px solid #2b6777;
+    margin-bottom: 20px;
+}
+
+.hero .right .text-box .img img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.hero .right .text-box p,
+.hero .right .text-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero .right .text-box p.features,
+.hero .right .text-box p.how_to_use,
+.hero .right .text-box p.code_overview {
+    margin-left: 20px;
+}
+
+.hero .right .text-box textarea {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction:column;
+    }
+
+    .hero .left, .hero .right {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    .hero .right .text-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .left h1 {
+        font-size: 24px;
+    }
+
+    .hero .left p,
+    .hero .right .text-box p,
+    .hero .right .text-box h3 {
+        font-size: 16px;
+    }
+
+    .hero .left .btn a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.github-icon {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+.no{
+    text-decoration: none;
+}
